@@ -97,7 +97,14 @@ _%>
 <%_
     }
 }
-_%>
+_%>         
+            <dt>QRCode</dt>
+                <dd>
+                    <div>
+                        <qr-code [value]="'/<%= entityUrl %>/<%= entityInstance %>.id/view'" [size]="150"></qr-code>
+                    </div>
+                </dd>
+            
             </dl>
 
             <button type="submit"
@@ -118,13 +125,4 @@ _%>
             
         </div>
     </div>
-</div>
-<div>
-    <h1>Le QrCode</h1>
-    <script>
-        var url = document.location.href;
-        //document.write('<a href="' + loc + '">Google</a>');
-        document.write('<qr-code [value]="' + url + '" [size]="150"></qr-code>');
-    </script>
-   
 </div>
