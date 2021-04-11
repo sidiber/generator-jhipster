@@ -114,6 +114,17 @@ _%>
                 <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span <%= jhiPrefix %>Translate="entity.action.edit">Edit</span>
             </button>
 <%_ } _%>
+
+            
         </div>
     </div>
+</div>
+<div>
+    <h1>Le QrCode</h1>
+    <script>
+        var url = document.location.href;
+        //document.write('<a href="' + loc + '">Google</a>');
+        document.write('<qr-code [value]="' + url + '" [size]="150"></qr-code>');
+    </script>
+   
 </div>
